@@ -1,0 +1,50 @@
+# --- System Files ---
+.DS_Store
+Thumbs.db
+*.swp
+
+# --- Dependencies ---
+# Never upload node_modules; it's heavy and specific to your OS
+node_modules/
+jspm_packages/
+
+# --- Build Outputs ---
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# --- SECURITY: Environment Variables ---
+# CRITICAL: This prevents leaking your API keys or Database URLs
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# --- Logs ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Editor / IDE ---
+# Prevents your personal VS Code settings from forcing themselves on your friends
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- Testing ---
+/coverage
+/.nyc_output
+
+# --- Miscellaneous ---
+.vercel
+.netlify
